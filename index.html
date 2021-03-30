@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Weather</title>
+</head>
+
+<body>
+    <section id="actuals"> 
+        <h1 style="text-align: center; font-size: 3rem; color: white; border: 2px solid white; margin: 0;">TEMPERATURE & MAP</h1>
+        <div class="input_container">
+            <input type="search" name="city" autocomplete="none" id="city" placeholder="enter city">
+        </div>
+
+        <div class="data_container">
+            <div id="heading">
+               <div id="temphead">
+                <h1 id="temperature">Temp : </h1>
+                    <h2 id="cityname">city : </h2>
+               </div>
+               
+               <div id="tempdetails">
+                    <h3 id="temp_min">Temp-Min : </h3>
+                    <h3 id="temp_max">Temp-max : </h3>
+                    <h3 id="feel_like">feel like : </h3>
+                    <h3 id="humidity">Humidity : </h3>
+               </div>
+            </div>     
+        </div>
+
+        <div id="mapBox">
+
+        </div>
+    </section>
+    <section id="gamezone">
+        <h1 style="text-align: center; font-size: 3rem; color: white; border: 2px solid white; margin: 20px 0px;">GAME ZONE</h1>
+        <div class="container">
+            <div id="beginBox">
+                <input type="submit" id="start_btn" value="START"/>
+            </div>
+            <div class="box">
+                <button style="background: red;" class="btns"></button>
+            </div>
+            <div class="box">
+                <button style="background: rgb(94, 255, 0);" class="btns"></button>
+            </div>
+            <div class="box">
+                <button style="background: rgb(0, 255, 149);" class="btns"></button>
+            </div>
+            <div class="box">
+                <button style="background: rgb(0, 43, 160);" class="btns"></button>
+            </div>
+            <div class="box">
+                <button style="background: rgb(153, 0, 255);" class="btns"></button>
+            </div>
+            <div class="box">
+                <button style="background: rgb(255, 0, 157);" class="btns"></button>
+            </div>
+            <div class="box">
+                <button style="background: rgb(36, 0, 119);" class="btns"></button>
+            </div>
+            <div class="box">
+                <button style="background: rgb(173, 167, 77);" class="btns"></button>
+            </div>
+        </div>
+        <div class="scoreexitbox">
+            <h1 id="Level">level : 0</h1>
+            <input type="submit" id="exitgame" value="EXIT">
+        </div>
+
+        <div class="game_description">
+            <h2 style="text-align: center;">GAME DETAIL</h2>
+            <ul >
+                <li>
+                    <h3>The game is very simple , simply you have to remember a  color pattern.</h3>
+                </li>
+                <li>
+                    <h3>You have to press the same color pattern as per the given pattern.</h3>
+                </li>
+                <li>
+                    <h3>After every successful level a pattern size is increases.</h3>
+                </li>
+                <li>
+                    <h3>If you press the wrong pattern the Game Overs.</h3>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="detailspanel">
+        <h1 style="text-align: center; font-size: 3rem; color: white; border: 2px solid white; margin: 20px 0px;">CITY AIR QUALITY</h1>
+        <div id="airQualityBox">
+            <h1>CityName</h1>
+            <h1>Air Quality Index</h1>
+            <h2>Сoncentration of CO (Carbon monoxide), μg/m<sup>3</sup></h2>
+            <h2>Сoncentration of NO (Nitrogen monoxide), μg/m<sup>3</sup></h2>
+            <h2>Сoncentration of NO<sub>2</sub> (Nitrogen dioxide), μg/m<sup>3</sup></h2>
+            <h2>Сoncentration of O<sub>3</sub> (Ozone), μg/m<sup>3</sup></h2>
+            <h2> Сoncentration of SO<sub>2</sub> (Sulphur dioxide), μg/m<sup>3</sup></h2>
+            <h2>Сoncentration of PM<sub>2.5</sub> (Fine particles matter), μg/m<sup>3</sup></h2>
+            <h2>Сoncentration of PM<sub>10</sub> (Coarse particulate matter), μg/m<sup>3</sup></h2>
+            <h2>Сoncentration of NH<sub>3</sub> (Ammonia), μg/m<sup>3</sup></h2>
+        </div>
+        <div class="groupDetail">
+            <h1 style="text-align: center; font-size: 2rem; color: white; border: 2px solid white; margin: 20px 0px;">PROJECT GROUP MEMBERS</h1>
+           <ul>
+               <li>Jiya Gupta</li>
+               <li onclick="{window.location.href='https://github.com/kavita999'}">Kavita Kumari</li>
+               <li  onclick="{window.location.href='https://github.com/mrsuspecious'}">Abhishek Kumar Singh</li>
+               <li onclick="{window.location.href='https://github.com/ankurvadhwani'}">Ankur Vadhwani</li>
+           </ul>
+        </div>
+    </section>
+    <script src="./data.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDe2MCFH_CNMAgEWo1RUbCFIaB3JS4ZJ-g&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+</body>
+</html>
